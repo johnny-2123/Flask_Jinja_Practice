@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,17 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='index.css')}}">
     <title>Tweeter</title>
 </head>
+
 <body>
     <h1>Tweeter</h1>
     <nav>
         <a href="/">Home</a>
         <a href="/feed">Feed</a>
         <a href="/new">New Tweet</a>
+        <a href="/new/jokes">New Joke</a>
     </nav>
     {% block main %}
     {% endblock %}
 </body>
+
 </html>

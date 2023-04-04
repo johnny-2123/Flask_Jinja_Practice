@@ -5,8 +5,10 @@
         <p>{{tweet.author}} tweeted on {{tweet.date}} ...</p>
         <p>"{{tweet.tweet}}"</p>
         {% if tweet.likes > 525000 %}
+        <p style="color:orange">Likes: {{tweet.likes / 1000}}</p>
+        {% else %}
         <p>Likes: {{tweet.likes / 1000}}</p>
         {% endif %}
-        {% if tweet.likes <= 525000 %} {{% endif %}} </div>
-            {% endfor %}
     </div>
+    {% endfor %}
+</div>
